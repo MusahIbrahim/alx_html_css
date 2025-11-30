@@ -169,3 +169,239 @@ main section:nth-child(2) p {
     font-size: 18px;
     opacity: 0.8;
 }
+/* Tutorials section */
+main section:nth-child(3) {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main section:nth-child(3) h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+main section:nth-child(3) > div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section:nth-child(3) > div > div {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 280px;
+    text-align: left;
+}
+
+main section:nth-child(3) > div > div > img:first-child {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+main section:nth-child(3) h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 20px 10px;
+}
+
+main section:nth-child(3) > div > div > p {
+    font-size: 14px;
+    margin: 0 20px 15px;
+    color: #666;
+}
+
+main section:nth-child(3) > div > div > div:first-of-type {
+    display: flex;
+    align-items: center;
+    margin: 0 20px 10px;
+}
+
+main section:nth-child(3) > div > div > div:first-of-type img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main section:nth-child(3) > div > div > div:first-of-type h4 {
+    font-size: 14px;
+    color: #C271FF;
+    font-weight: bold;
+}
+
+main section:nth-child(3) > div > div > div:last-of-type {
+    display: flex;
+    margin: 0 20px 15px;
+    color: #C271FF;
+}
+
+main section:nth-child(3) > div > div > p:last-child {
+    text-align: right;
+    margin: 0 20px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #C271FF;
+}
+
+/* Membership section */
+main section:nth-child(4) {
+    background: #071629;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+main section:nth-child(4) h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+main section:nth-child(4) > div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+main section:nth-child(4) > div > div {
+    max-width: 200px;
+}
+
+main section:nth-child(4) img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(4) h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(4) p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+main section:nth-child(4) button {
+    background: #C271FF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+main section:nth-child(4) button:hover {
+    background: #9B51E0;
+}
+
+/* FAQ section */
+main section:nth-child(5) {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section:nth-child(5) h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+main section:nth-child(5) > div {
+    display: flex;
+    gap: 100px;
+}
+
+main section:nth-child(5) > div > div {
+    flex: 1;
+}
+
+main section:nth-child(5) h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main section:nth-child(5) > div > div > div:nth-child(even) {
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
+/* Footer */
+footer {
+    background: #071629;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer section > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+footer img {
+    height: 40px;
+}
+
+footer div:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+footer i {
+    font-size: 20px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: #C271FF;
+}
+
+footer p {
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    main section:first-child h1 {
+        font-size: 60px;
+    }
+    
+    main section:nth-child(2) {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    main section:nth-child(5) > div {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    footer section > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
